@@ -6,7 +6,7 @@ import { Progress } from "../../components/ui/progress"
 import { useQuizStore } from "../../hooks/useQuizStore"
 // import { QuizQuestion } from "@/types/quiz"
 import { CheckCircle2, XCircle, Plus } from 'lucide-react'
-import { decodeHtmlEntities } from '../../lib/StringUtils'
+import { decodeHtmlEntities } from './stringUtils'
 
 export default function QuestionCard() {
   const { questions, currentQuestion, answerQuestion } = useQuizStore()
