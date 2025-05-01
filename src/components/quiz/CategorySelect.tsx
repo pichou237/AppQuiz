@@ -20,6 +20,7 @@ export default function CategorySelect() {
         const response = await fetch('https://opentdb.com/api_category.php')
         const data = await response.json()
         setCategories(data.trivia_categories)
+        console.log(categories)
       } catch (error) {
         navigate('/error')
       }
